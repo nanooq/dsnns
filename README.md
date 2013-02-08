@@ -37,6 +37,6 @@ rails server
 Misc
 =====
 
-# git reset --hard b165287795a90af090ac486f9657b60ec8715919
-# git push -f
-# what is sccs
+git reset --hard b165287795a90af090ac486f9657b60ec8715919
+git push -f
+what is sccs
