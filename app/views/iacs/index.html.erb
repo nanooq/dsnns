@@ -1,0 +1,29 @@
+<h1>Listing indentity-address-connections</h1>
+
+<table>
+  <tr>
+    <th>Type of Identity</th>
+    <th>Identity</th>
+    <th>Address</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @iacs.each do |iac| %>
+  <tr>
+    <td><%= iac.identity_type %></td>
+    <td><%= iac.identity %></td>
+    <td><%= iac.address %></td>
+    <td><%= iac.status %></td>
+    <td><%= link_to 'Show', iac %></td>
+    <td><%= link_to 'Edit', edit_iac_path(iac) %></td>
+    <td><%= link_to 'Destroy', iac, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Iac', new_iac_path %>

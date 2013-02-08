@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Identity type:</b>
+  <%= @iac.identity_type %>
+</p>
+
+<p>
+  <b>Identity:</b>
+  <%= @iac.identity %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @iac.address %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @iac.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_iac_path(@iac) %> |
+<%= link_to 'Back', iacs_path %>

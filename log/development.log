@@ -1,0 +1,168 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (173.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (154.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateIacs (20130208084222)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "iacs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identity_type" varchar(255), "identity" varchar(255), "address" varchar(255), "status" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130208084222')[0m
+  [1m[35m (179.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-02-08 09:44:26 +0100
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (8ms)
+
+
+Started GET "/iacs" for 127.0.0.1 at 2013-02-08 09:44:29 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.2ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (5.3ms)
+Compiled iacs.css  (93ms)  (pid 26585)
+Compiled scaffolds.css  (25ms)  (pid 26585)
+Compiled application.css  (138ms)  (pid 26585)
+Compiled jquery.js  (3ms)  (pid 26585)
+Compiled jquery_ujs.js  (0ms)  (pid 26585)
+Compiled iacs.js  (996ms)  (pid 26585)
+Compiled application.js  (1115ms)  (pid 26585)
+Completed 200 OK in 1491ms (Views: 1410.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:30 +0100
+Served asset /application.css - 200 OK (23ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:30 +0100
+Served asset /iacs.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:30 +0100
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/iacs/new" for 127.0.0.1 at 2013-02-08 09:44:32 +0100
+Processing by IacsController#new as HTML
+  Rendered iacs/_form.html.erb (13.2ms)
+  Rendered iacs/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 39ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:32 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:32 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:32 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started POST "/iacs" for 127.0.0.1 at 2013-02-08 09:44:37 +0100
+Processing by IacsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iJyb/3nuT05GuGsz61sUOKRzN3BHXkZNMivjmaqzhSs=", "iac"=>{"identity_type"=>"test", "identity"=>"test", "address"=>"test", "status"=>"test"}, "commit"=>"Create Iac"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (47.8ms)[0m  [1mINSERT INTO "iacs" ("address", "created_at", "identity", "identity_type", "status", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", "test"], ["created_at", Fri, 08 Feb 2013 08:44:37 UTC +00:00], ["identity", "test"], ["identity_type", "test"], ["status", "test"], ["updated_at", Fri, 08 Feb 2013 08:44:37 UTC +00:00]]
+  [1m[35m (174.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/iacs/1
+Completed 302 Found in 230ms (ActiveRecord: 222.1ms)
+
+
+Started GET "/iacs/1" for 127.0.0.1 at 2013-02-08 09:44:37 +0100
+Processing by IacsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIac Load (0.4ms)[0m  [1mSELECT "iacs".* FROM "iacs" WHERE "iacs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered iacs/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:37 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:37 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:37 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/iacs" for 127.0.0.1 at 2013-02-08 09:44:39 +0100
+Processing by IacsController#index as HTML
+  [1m[35mIac Load (0.3ms)[0m  SELECT "iacs".* FROM "iacs" 
+  Rendered iacs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:39 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:39 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-08 09:44:39 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateIacs (20130208084222)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateIacs (20130208084222)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mSQL (188.3ms)[0m  [1mDELETE FROM "iacs"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (9.9ms)[0m  [1mINSERT INTO "iacs" ("address", "created_at", "identity", "identity_type", "status", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", "https://www.nanooq.org/blog"], ["created_at", Fri, 08 Feb 2013 08:47:00 UTC +00:00], ["identity", "standard@nanooq.org"], ["identity_type", "browserid"], ["status", "pending"], ["updated_at", Fri, 08 Feb 2013 08:47:00 UTC +00:00]]
+  [1m[35m (117.2ms)[0m  commit transaction
+
+
+Started GET "/iacs" for 127.0.0.1 at 2013-02-08 09:47:12 +0100
+Connecting to database specified by database.yml
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.2ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 214ms (Views: 125.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-08 09:47:13 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-02-08 09:47:13 +0100
+Served asset /iacs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-08 09:47:13 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/iacs" for 127.0.0.1 at 2013-02-08 10:21:13 +0100
+Connecting to database specified by database.yml
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.2ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (8.0ms)
+Compiled iacs.css  (55ms)  (pid 27623)
+Compiled application.css  (2ms)  (pid 27623)
+Completed 200 OK in 243ms (Views: 157.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-08 10:21:14 +0100
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-02-08 10:21:14 +0100
+Served asset /iacs.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-08 10:21:14 +0100
+Served asset /scaffolds.css - 304 Not Modified (5ms)

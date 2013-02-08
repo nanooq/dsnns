@@ -1,0 +1,33 @@
+<%= form_for(@iac) do |f| %>
+  <% if @iac.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@iac.errors.count, "error") %> prohibited this iac from being saved:</h2>
+
+      <ul>
+      <% @iac.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :identity_type %><br />
+    <%= f.text_field :identity_type %>
+  </div>
+  <div class="field">
+    <%= f.label :identity %><br />
+    <%= f.text_field :identity %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
