@@ -3,6 +3,12 @@ dsnns
 
 nameservice for onli's DSN Blogsudo apt-get install apache2 curl git libmysqlclient-dev mysql-server nodejs
 
+usage
+=====
+
+Retrieve address by using identity: 
+http://www.doma.in/iacs/getAddress.json?identity=user@ema.il
+returns null if not found
 
 setup
 =====
@@ -24,10 +30,29 @@ dsnup
 
 rake db:seed
 
-// scaffolding memories
-// rails new dsnns
-// rails generate scaffold Iac identity_type:string identity:string address:string status:string
-// rake db:migrate 
+scaffolding memories
+
+- rails new dsnns
+- rails generate scaffold Iac identity_type:string identity:string address:string status:string
+- rake db:migrate 
+- Then add action to controller app/controllers/iacs_controller.rb:
+rails generate controller iacs getAddress
+... look at the diffs and say no.
+[code]
+  # GET /iacs/getAddress
+  # GET /iacs/getAddress.json
+  def getAddress
+    @iac = Iac.find_by_identity(params[:identity])
+
+    respond_to do |format|
+#      format.html # getUrl.html.erb
+      format.json { render json: @iac }
+    end
+  end
+[/code]
+Comment: Most time was spent trying to figure out how to do this with the least amount of work. 
+So, the finished version is basically copy the show-action, call it getUrl an use the 
+.find_by_identity method. 
 
 rake test
 

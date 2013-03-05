@@ -47,9 +47,8 @@ class IacsControllerTest < ActionController::TestCase
     assert_redirected_to iacs_path
   end
 
-  test "should get getUrl" do
-    get :getUrl
+  test "should get getAddress" do
+    get :getAddress
     assert_response :success
   end
-
 end

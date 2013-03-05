@@ -1,4 +1,6 @@
 Dsnns::Application.routes.draw do
+  get "iacs/getAddress"
+
   get "iacs/getUrl"
 
   resources :iacs
