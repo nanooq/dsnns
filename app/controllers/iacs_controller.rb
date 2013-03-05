@@ -1,4 +1,15 @@
 class IacsController < ApplicationController
+
+  def getUrl
+#    @iac = Iac.where(identity: params[:identity])
+    @iac = Iac.find_by_identity(params[:identity])
+
+    respond_to do |format|
+#      format.html # getUrl.html.erb
+      format.json { render json: @iac }
+    end
+  end
+
   # GET /iacs
   # GET /iacs.json
   def index

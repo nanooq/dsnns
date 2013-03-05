@@ -1,6 +1,13 @@
 Dsnns::Application.routes.draw do
+  get "iacs/getUrl"
+
   resources :iacs
 
+#    match '/about',   :to => 'iacs/new'
+#    match '/about' => '/iacs/new'
+#    get   "/url" => "iacs/new"
+#    match '/url/' => 'iacs#show'
+#    match 'iacs/url?:email'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
