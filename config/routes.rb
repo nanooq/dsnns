@@ -5,7 +5,7 @@ Dsnns::Application.routes.draw do
 
   resources :iacs
 
-  root :to => "home#index"
+  root :to => "iacs#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

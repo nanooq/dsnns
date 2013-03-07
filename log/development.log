@@ -5438,3 +5438,49 @@ Binary data inserted for `string` type on column `encrypted_password`
   [1m[36m (157.2ms)[0m  [1mcommit transaction[0m
 Redirected to http://localhost:3000/
 Completed 302 Found in 734ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-07 11:36:05 +0100
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-07 11:36:27 +0100
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:36:36 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.2ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (10.0ms)
+Compiled jquery.js  (4ms)  (pid 22885)
+Compiled jquery_ujs.js  (0ms)  (pid 22885)
+Completed 200 OK in 282ms (Views: 171.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
+Served asset /iacs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
+Served asset /iacs.js - 304 Not Modified (2ms)
