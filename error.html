@@ -1,0 +1,148 @@
+Internal Server Error : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    a { color: #000; }
+    a:visited { color: #666; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  OpenSSL::SSL::SSLError
+    in IacsController#create
+</h1>
+<pre>SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed</pre>
+
+
+<p><code>Rails.root: /home/one/work/dsnns</code></p>
+
+<div id="traces">
+    <a href="#" onclick="document.getElementById(&#x27;Framework-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Full-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Application-Trace&#x27;).style.display=&#x27;block&#x27;;; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById(&#x27;Application-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Full-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Framework-Trace&#x27;).style.display=&#x27;block&#x27;;; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById(&#x27;Application-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Framework-Trace&#x27;).style.display=&#x27;none&#x27;;document.getElementById(&#x27;Full-Trace&#x27;).style.display=&#x27;block&#x27;;; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code></code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:678:in `connect&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:678:in `block in connect&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/timeout.rb:44:in `timeout&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/timeout.rb:89:in `timeout&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:678:in `connect&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:637:in `do_start&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:626:in `start&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:1168:in `request&#x27;
+warden-browserid (0.8.0) lib/warden-browserid/strategy.rb:20:in `valid?&#x27;
+warden (1.2.1) lib/warden/proxy.rb:351:in `block in _run_strategies_for&#x27;
+warden (1.2.1) lib/warden/proxy.rb:349:in `each&#x27;
+warden (1.2.1) lib/warden/proxy.rb:349:in `_run_strategies_for&#x27;
+warden (1.2.1) lib/warden/proxy.rb:319:in `_perform_authentication&#x27;
+warden (1.2.1) lib/warden/proxy.rb:127:in `authenticate!&#x27;
+devise (2.2.3) lib/devise/controllers/helpers.rb:48:in `authenticate_user!&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:418:in `_run__187402826__process_action__649982908__callbacks&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks&#x27;
+actionpack (3.2.11) lib/abstract_controller/callbacks.rb:17:in `process_action&#x27;
+actionpack (3.2.11) lib/action_controller/metal/rescue.rb:29:in `process_action&#x27;
+actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action&#x27;
+activesupport (3.2.11) lib/active_support/notifications.rb:123:in `block in instrument&#x27;
+activesupport (3.2.11) lib/active_support/notifications/instrumenter.rb:20:in `instrument&#x27;
+activesupport (3.2.11) lib/active_support/notifications.rb:123:in `instrument&#x27;
+actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:29:in `process_action&#x27;
+actionpack (3.2.11) lib/action_controller/metal/params_wrapper.rb:207:in `process_action&#x27;
+activerecord (3.2.11) lib/active_record/railties/controller_runtime.rb:18:in `process_action&#x27;
+actionpack (3.2.11) lib/abstract_controller/base.rb:121:in `process&#x27;
+actionpack (3.2.11) lib/abstract_controller/rendering.rb:45:in `process&#x27;
+actionpack (3.2.11) lib/action_controller/metal.rb:203:in `dispatch&#x27;
+actionpack (3.2.11) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch&#x27;
+actionpack (3.2.11) lib/action_controller/metal.rb:246:in `block in action&#x27;
+actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `dispatch&#x27;
+actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:36:in `call&#x27;
+journey (1.0.4) lib/journey/router.rb:68:in `block in call&#x27;
+journey (1.0.4) lib/journey/router.rb:56:in `each&#x27;
+journey (1.0.4) lib/journey/router.rb:56:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call&#x27;
+warden (1.2.1) lib/warden/manager.rb:35:in `block in call&#x27;
+warden (1.2.1) lib/warden/manager.rb:34:in `catch&#x27;
+warden (1.2.1) lib/warden/manager.rb:34:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call&#x27;
+rack (1.4.5) lib/rack/etag.rb:23:in `call&#x27;
+rack (1.4.5) lib/rack/conditionalget.rb:35:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call&#x27;
+rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context&#x27;
+rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call&#x27;
+activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call&#x27;
+activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__590002972__call__739358362__callbacks&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call&#x27;
+railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app&#x27;
+railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call&#x27;
+activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged&#x27;
+railties (3.2.11) lib/rails/rack/logger.rb:16:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call&#x27;
+rack (1.4.5) lib/rack/methodoverride.rb:21:in `call&#x27;
+rack (1.4.5) lib/rack/runtime.rb:17:in `call&#x27;
+activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call&#x27;
+rack (1.4.5) lib/rack/lock.rb:15:in `call&#x27;
+actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call&#x27;
+railties (3.2.11) lib/rails/engine.rb:479:in `call&#x27;
+railties (3.2.11) lib/rails/application.rb:223:in `call&#x27;
+rack (1.4.5) lib/rack/content_length.rb:14:in `call&#x27;
+railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call&#x27;
+rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread&#x27;</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:678:in `connect&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:678:in `block in connect&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/timeout.rb:44:in `timeout&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/timeout.rb:89:in `timeout&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:678:in `connect&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:637:in `do_start&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:626:in `start&#x27;
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/net/http.rb:1168:in `request&#x27;
+warden-browserid (0.8.0) lib/warden-browserid/strategy.rb:20:in `valid?&#x27;
+warden (1.2.1) lib/warden/proxy.rb:351:in `block in _run_strategies_for&#x27;
+warden (1.2.1) lib/warden/proxy.rb:349:in `each&#x27;
+warden (1.2.1) lib/warden/proxy.rb:349:in `_run_strategies_for&#x27;
+warden (1.2.1) lib/warden/proxy.rb:319:in `_perform_authentication&#x27;
+warden (1.2.1) lib/warden/proxy.rb:127:in `authenticate!&#x27;
+devise (2.2.3) lib/devise/controllers/helpers.rb:48:in `authenticate_user!&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:418:in `_run__187402826__process_action__649982908__callbacks&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback&#x27;
+activesupport (3.2.11) lib/active_support/callbacks.rb:385:i
