@@ -37,5 +37,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-# To use devise
-gem 'devise'
+gem 'devise_browserid_authenticatable'
