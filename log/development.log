@@ -5484,3 +5484,930 @@ Served asset /application.js - 304 Not Modified (19ms)
 
 Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:36:37 +0100
 Served asset /iacs.js - 304 Not Modified (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-03-07 11:38:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 48ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.3ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:38:05 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.3ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:38:14 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/sign_ot" for 127.0.0.1 at 2013-03-07 11:38:21 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_ot"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/sign_ott" for 127.0.0.1 at 2013-03-07 11:38:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_ott"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-03-07 11:38:24 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-03-07 11:38:26 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/users/sign_ot" for 127.0.0.1 at 2013-03-07 11:38:27 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_ot"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_ot" for 127.0.0.1 at 2013-03-07 11:41:44 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_ot"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-03-07 11:41:46 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-03-07 11:41:48 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:42:03 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.2ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (10.2ms)
+ERROR: compiling _app_views_layouts_application_html_erb__265494557__615317958 RAISED /home/one/work/dsnns/app/views/layouts/application.html.erb:15: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...t', destroy_user_session_path :method => :delete );@output_b...
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb__265494557__615317958(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Dsnns</title>
+  ');@output_buffer.append= ( stylesheet_link_tag    "application", :media => "all" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag "application" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tags );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <p class="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+  <p class="alert">');@output_buffer.append= ( alert );@output_buffer.safe_concat('</p>
+  <div id="user_nav">
+');     if user_signed_in? 
+@output_buffer.safe_concat('      Signed in as ');@output_buffer.append= ( current_user.email );@output_buffer.safe_concat('. Not you? 
+      ');@output_buffer.append= ( link_to 'Sign out', destroy_user_session_path :method => :delete );@output_buffer.safe_concat('
+');     else 
+@output_buffer.safe_concat('      ');@output_buffer.append= ( link_to 'Sign Up', new_user_registration_path );@output_buffer.safe_concat(' or 
+      ');@output_buffer.append= ( link_to 'Sign in', new_user_session_path );@output_buffer.safe_concat('
+');     end 
+@output_buffer.safe_concat('</div>
+  ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/template.rb:297:in `module_eval'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/template.rb:297:in `compile'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/template.rb:232:in `compile!'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/template.rb:144:in `block in render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/notifications.rb:125:in `instrument'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/template.rb:143:in `render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:88:in `render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.11/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/home/one/work/dsnns/app/controllers/iacs_controller.rb:19:in `index'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/base.rb:167:in `process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:414:in `_run__241613571__process_action__725774875__callbacks'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `instrument'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.11/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/base.rb:121:in `process'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:45:in `process'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal.rb:203:in `dispatch'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_controller/metal.rb:246:in `block in action'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.11/lib/active_record/query_cache.rb:64:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `_run__434540001__call__923212449__callbacks'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.11/lib/rails/rack/logger.rb:32:in `call_app'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `block in call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.11/lib/rails/engine.rb:479:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.11/lib/rails/application.rb:223:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/one/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Completed 500 Internal Server Error in 215ms
+
+ActionView::Template::Error (/home/one/work/dsnns/app/views/layouts/application.html.erb:15: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...t', destroy_user_session_path :method => :delete );@output_b...
+...                               ^):
+    12:   <div id="user_nav">
+    13:     <% if user_signed_in? %>
+    14:       Signed in as <%= current_user.email %>. Not you? 
+    15:       <%= link_to 'Sign out', destroy_user_session_path :method => :delete %>
+    16:     <% else %>
+    17:       <%= link_to 'Sign Up', new_user_registration_path %> or 
+    18:       <%= link_to 'Sign in', new_user_session_path %>
+  app/controllers/iacs_controller.rb:19:in `index'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Processing by IacsController#index as HTML
+  [1m[35mIac Load (0.3ms)[0m  SELECT "iacs".* FROM "iacs" 
+  Rendered iacs/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 121ms (Views: 118.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Served asset /iacs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Served asset /iacs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:42 +0100
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RHPDJ/vKxcdN6m98yYYYpZ0OFrnwABL1JfrhC/TCTmU="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 82ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.3ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:45 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:43:55 +0100
+Processing by IacsController#index as HTML
+  [1m[35mIac Load (0.3ms)[0m  SELECT "iacs".* FROM "iacs" 
+  Rendered iacs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:56 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:56 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:56 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:56 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:43:56 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:56 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:43:56 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:45:24 +0100
+
+SyntaxError (/home/one/work/dsnns/app/controllers/iacs_controller.rb:2: syntax error, unexpected ',', expecting tASSOC
+  before_filter :authenticate_user!, except => { :show, :index }
+                                                       ^):
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__434540001__call__923212449__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:45:42 +0100
+
+ActionController::RoutingError (undefined local variable or method `except' for IacsController:Class):
+  app/controllers/iacs_controller.rb:2:in `<class:IacsController>'
+  app/controllers/iacs_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.3ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 101ms (Views: 85.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:45:58 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/iacs/2" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Processing by IacsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mIac Load (0.4ms)[0m  SELECT "iacs".* FROM "iacs" WHERE "iacs"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered iacs/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:02 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/iacs" for 127.0.0.1 at 2013-03-07 11:46:04 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.3ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:05 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:05 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:05 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:05 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:05 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:05 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:05 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/iacs/2/edit" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Processing by IacsController#edit as HTML
+  Parameters: {"id"=>"2"}
+Completed 401 Unauthorized in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (2.9ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 111ms (Views: 89.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:07 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started DELETE "/iacs/2" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Processing by IacsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pXRN3SN+TJVMw05HJdlHd4GwO+C8jBNnljurdkm9F/A=", "id"=>"2"}
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (0.8ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:23 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/iacs/new" for 127.0.0.1 at 2013-03-07 11:46:32 +0100
+Processing by IacsController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 11:46:32 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (0.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
+Served asset /application.js - 304 Not Modified (2ms)

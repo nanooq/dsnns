@@ -1,4 +1,6 @@
 class IacsController < ApplicationController
+  before_filter :authenticate_user!, :except => [ :show, :index ]
+
 
   # GET /iacs/getAddress
   # GET /iacs/getAddress.json
