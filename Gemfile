@@ -40,5 +40,8 @@ gem 'jquery-rails'
 # To use devise
 gem 'devise'
 
-# To use browserid-rails
+# To user warden-browserid
+gem 'warden-browserid'
+
+# To use devise-browserid
 gem 'devise-browserid'
