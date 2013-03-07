@@ -39,3 +39,6 @@ gem 'jquery-rails'
 
 # To use devise
 gem 'devise'
+
+# To use browserid-rails
+gem 'devise-browserid'

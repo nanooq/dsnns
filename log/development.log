@@ -6411,3 +6411,151 @@ Served asset /iacs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 11:46:33 +0100
 Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 18:36:04 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.2ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (49.3ms)
+Compiled jquery.js  (6ms)  (pid 3132)
+Compiled jquery_ujs.js  (0ms)  (pid 3132)
+Completed 500 Internal Server Error in 600ms
+
+ActionView::Template::Error (uninitialized constant Warden::BrowserId):
+    17: 
+    18: </body>
+    19: </html>
+    20: <%= browserid_include_tag %>
+  app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb___677048706_89637720'
+  app/controllers/iacs_controller.rb:21:in `index'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 18:38:48 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.2ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (63.0ms)
+Completed 500 Internal Server Error in 363ms
+
+ActionView::Template::Error (uninitialized constant Warden::BrowserId):
+    16:   <%= yield %>
+    17: 
+    18: </body>
+    19: <%= browserid_include_tag %>
+    20: </html>
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___30276484_84677360'
+  app/controllers/iacs_controller.rb:21:in `index'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (62.5ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (85.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 18:38:50 +0100
+Processing by IacsController#index as HTML
+  [1m[35mIac Load (7.0ms)[0m  SELECT "iacs".* FROM "iacs" 
+  Rendered iacs/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (uninitialized constant Warden::BrowserId):
+    16:   <%= yield %>
+    17: 
+    18: </body>
+    19: <%= browserid_include_tag %>
+    20: </html>
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___30276484_84677360'
+  app/controllers/iacs_controller.rb:21:in `index'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 18:38:51 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.4ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (uninitialized constant Warden::BrowserId):
+    16:   <%= yield %>
+    17: 
+    18: </body>
+    19: <%= browserid_include_tag %>
+    20: </html>
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___30276484_84677360'
+  app/controllers/iacs_controller.rb:21:in `index'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 18:42:01 +0100
+Processing by IacsController#index as HTML
+  [1m[36mIac Load (0.3ms)[0m  [1mSELECT "iacs".* FROM "iacs" [0m
+  Rendered iacs/index.html.erb within layouts/application (46.9ms)
+Completed 500 Internal Server Error in 248ms
+
+ActionView::Template::Error (uninitialized constant Warden::BrowserId):
+    16:   <%= yield %>
+    17: 
+    18: </body>
+    19: <%= browserid_include_tag %>
+    20: </html>
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb__201120996_76946570'
+  app/controllers/iacs_controller.rb:21:in `index'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (40.2ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (53.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Processing by IacsController#index as HTML
+  [1m[35mIac Load (0.4ms)[0m  SELECT "iacs".* FROM "iacs" 
+  Rendered iacs/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /iacs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /iacs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sign_in_blue.png" for 127.0.0.1 at 2013-03-07 18:49:53 +0100
+Served asset /sign_in_blue.png - 304 Not Modified (8ms)
