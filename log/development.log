@@ -4943,3 +4943,498 @@ Processing by IacsController#getAddress as JSON
   Parameters: {"identity"=>"nanooq@hasi.it"}
   [1m[36mIac Load (6.6ms)[0m  [1mSELECT "iacs".* FROM "iacs" WHERE "iacs"."identity" = 'nanooq@hasi.it' LIMIT 1[0m
 Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 6.6ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateIacs (20130208084222)
+Migrating to DeviseCreateUsers (20130307091807)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (30.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.4ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130307091807')[0m
+  [1m[35m (173.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2013-03-07 10:21:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.4) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.4) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:21:09 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (4.0ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 395ms (Views: 232.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:09 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:09 +0100
+Served asset /scaffolds.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:09 +0100
+Served asset /iacs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:10 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:10 +0100
+Served asset /iacs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:10 +0100
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:10 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:21:17 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"test@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'test@test.de' LIMIT 1[0m
+Completed 401 Unauthorized in 105ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"test@test.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (0.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 175ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:18 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:18 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:18 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:18 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:18 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:18 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:18 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'heinz.hiekmann@student.uni-siegen.de' LIMIT 1
+Completed 401 Unauthorized in 4ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 171ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:40 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (0.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:21:45 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (2.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 262ms (Views: 122.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Served asset /iacs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Served asset /iacs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:22 +0100
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:22:44 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'heinz.hiekmann@student.uni-siegen.de' LIMIT 1[0m
+Completed 401 Unauthorized in 66ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (0.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 173ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:22:45 +0100
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:45 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:22:45 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:22:45 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:45 +0100
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:45 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:22:45 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (3.0ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 274ms (Views: 128.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Served asset /application.css - 304 Not Modified (63ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Served asset /iacs.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Served asset /iacs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:34 +0100
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'heinz.hiekmann@student.uni-siegen.de' LIMIT 1[0m
+Completed 401 Unauthorized in 84ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (0.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 173ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:33:42 +0100
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-03-07 10:36:37 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-07 10:36:42 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (2.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/sessions/new.html.erb within layouts/application (29.8ms)
+Compiled jquery.js  (5ms)  (pid 21780)
+Compiled jquery_ujs.js  (0ms)  (pid 21780)
+Compiled application.js  (73ms)  (pid 21780)
+Completed 200 OK in 356ms (Views: 232.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:36:43 +0100
+Served asset /application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:36:43 +0100
+Served asset /iacs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:36:43 +0100
+Served asset /iacs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:36:43 +0100
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:36:43 +0100
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:36:43 +0100
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:36:43 +0100
+Served asset /application.js - 304 Not Modified (12ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-03-07 10:37:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /home/one/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/shared/_links.erb (1.7ms)
+  Rendered /home/one/.rvm/gems/ruby-1.9.2-p320/gems/devise-2.2.3/app/views/devise/registrations/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/iacs.css?body=1" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Served asset /iacs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iacs.js?body=1" for 127.0.0.1 at 2013-03-07 10:37:43 +0100
+Served asset /iacs.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-03-07 10:40:47 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tF19ghaNPN1yzxbojrVwfvaX/jRUNtV4V+NU44CGUQw=", "user"=>{"email"=>"heinz.hiekmann@student.uni-siegen.de", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'heinz.hiekmann@student.uni-siegen.de' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (58.4ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 07 Mar 2013 09:40:48 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "heinz.hiekmann@student.uni-siegen.de"], ["encrypted_password", "$2a$10$s.oPPZU6naWeB7k26dmp0e1d2I5hY11O4hI7WEO2Yqjo5dYMh1bCe"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 07 Mar 2013 09:40:48 UTC +00:00]]
+  [1m[35m (164.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-07 09:40:48.423777', "current_sign_in_at" = '2013-03-07 09:40:48.423777', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-07 09:40:48.426488' WHERE "users"."id" = 1
+  [1m[36m (157.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 734ms (ActiveRecord: 0.0ms)

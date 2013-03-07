@@ -1,15 +1,11 @@
 Dsnns::Application.routes.draw do
-  get "iacs/getAddress"
+  devise_for :users
 
-  get "iacs/getUrl"
+  get "iacs/getAddress"
 
   resources :iacs
 
-#    match '/about',   :to => 'iacs/new'
-#    match '/about' => '/iacs/new'
-#    get   "/url" => "iacs/new"
-#    match '/url/' => 'iacs#show'
-#    match 'iacs/url?:email'
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
